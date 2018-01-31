@@ -33,3 +33,18 @@ Benchmark 8 - draw 32x32 rects using 'rectangle'
     #Turn 2
     10.012	0.377991	3.92401	6.89801	7.71997	15.705	27.9009	110.903
     Total: 183.441
+ 
+[2] (+ 7-10% speed in 'pixel' benchmarks vs [1]) 
+```
+Device: ESP-12 + TFT7735
+Driver: https://github.com/hosaka/micropython-st7735/issues/1 - @hosaka's driver with @tmueller1970's correction + Adafruit's pixel() function port
+Micropython version: MicroPython v1.9.3-8-g63826ac5c on 2017-11-01; ESP module with ESP8266
+    
+#Turn 1
+10.0144	0.376305	3.616	6.9275	7.70369	14.4771	28.0244	110.836
+Total: 181.976
+
+#Turn 2
+10.01	0.375977	3.638	6.927	7.71405	14.57	28.023	110.867
+Total: 182.125
+```
